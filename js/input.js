@@ -1,13 +1,13 @@
 /* Change the configuration */
 
 var firebaseConfig = {
-    apiKey: "AIzaSyA4RRvZ4ivOsgNRRN1igIjc43VdVARMQo0",
-    authDomain: "grocery-list-98b6c.firebaseapp.com",
-    projectId: "grocery-list-98b6c",
-    storageBucket: "grocery-list-98b6c.appspot.com",
-    messagingSenderId: "279937219467",
-    appId: "1:279937219467:web:9c24ec3c319961c4438d8e",
-    measurementId: "G-GRJKNJ2PLM"
+    apiKey: "AIzaSyBLNHx72vW060ST1_tQrYHPSjD9ttKDQs0",
+    authDomain: "securityawareness-3bd4d.firebaseapp.com",
+    projectId: "securityawareness-3bd4d",
+    storageBucket: "securityawareness-3bd4d.appspot.com",
+    messagingSenderId: "969847294",
+    appId: "1:969847294:web:3fd0d1124b0f000c54d0af",
+    measurementId: "G-68MK1P2DQP"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -22,7 +22,7 @@ var firebaseConfig = {
       data[entry.name]=entry.value;
     });
     console.log(data);
-    firebase.firestore().collection("hotel").add(data);
+    firebase.firestore().collection("feedback").add(data);
     /* clear the entry */
     $('form')[0].reset();
   });
@@ -38,13 +38,13 @@ var firebaseConfig = {
   
   firebase
     .firestore()
-    .collection('hotel')
+    .collection('feedback')
     .onSnapshot((querySnapshot) => {
       console.log(querySnapshot.size);
       querySnapshot.forEach((doc) => {
         console.log(doc.data());
         console.log(doc.data().recommend);
-        console.log(doc.data().improv);
+        console.log(doc.data().feedback);
       });
     });
   
