@@ -87,7 +87,7 @@ body {
 .logo img {
     width: 10cm;
     height: 10cm;
-    padding-top: 4%;
+    padding-top: 6%;
 }
 
 .sub1 {
@@ -186,7 +186,7 @@ body {
 .pass header {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 10mm;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .pass h1 {
@@ -205,11 +205,20 @@ body {
     font-size: 5mm;
 }
 
+.cont {
+    display: grid;
+    grid-template-columns: 465px 465px;
+    padding-left: 8%;
+    width: 60%;
+}
+
 .manager1 {
     width: 12cm;
     height: 4cm;
     background-color: slategray;
     border-radius: 25px;
+    grid-column: 1/2;
+    grid-row: 1/2;
     position: relative;
 }
 
@@ -217,9 +226,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 4mm;
     color: white;
-    width: 7cm;
-    transform: translate(70%, -50%);
-    padding-top: 33%;
+    width: 6.5cm;
+    transform: translate(78%, -50%);
+    padding-top: 25%;
     text-decoration: none;
     font-style: normal;
 }
@@ -240,7 +249,7 @@ body {
 }
 
 .space {
-    height: .01cm;
+    width: 1cm;
 }
 
 .manager2 {
@@ -248,6 +257,8 @@ body {
     height: 4cm;
     background-color: slategray;
     border-radius: 25px;
+    grid-column: 2/2;
+    grid-row: 1/2;
     position: relative;
 }
 
@@ -255,9 +266,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 4mm;
     color: white;
-    width: 7cm;
-    transform: translate(70%, -50%);
-    padding-top: 32%;
+    width: 6.5cm;
+    transform: translate(78%, -50%);
+    padding-top: 25%;
     text-decoration: none;
     font-style: normal;
 }
@@ -277,7 +288,6 @@ body {
     color: lightgray;
 }
 
-
 .phish {
     width: 60%;
     padding-top: 3%;
@@ -287,7 +297,7 @@ body {
 .phish header {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 10mm;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .phish h1 {
@@ -306,14 +316,14 @@ body {
     font-size: 5mm;
 }
 
-.phish1 {
-    width: 15cm;
+#phish1 {
+    width: 18cm;
     height: 8cm;
 }
 
 .phish2 {
-    width: 14cm;
-    height: 10cm;
+    width: 18cm;
+    height: 8cm;
 }
 
 .phish a {
@@ -333,8 +343,13 @@ body {
 .vpn header {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 10mm;
+    font-weight: bold;
+}
+
+.vpn h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6mm;
     font-style: bold;
-    text-decoration: underline;
 }
 
 .vpn p {
